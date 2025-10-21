@@ -1,0 +1,3 @@
+[2025-10-21 10:22:03] ERROR Unable to connect to <HOST_A>:443 (TLS handshake failed)
+[2025-10-21 10:22:04] WARN Retrying in 5 seconds
+[2025-10-21 10:22:09] ERROR Authentication failed for user <USER_A>

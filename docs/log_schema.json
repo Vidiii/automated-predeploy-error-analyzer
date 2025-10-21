@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NormalizedLogEvent",
+  "type": "object",
+  "required": ["timestamp", "tool", "job_id", "level", "message"],
+  "properties": {
+    "timestamp": { "type": "string", "format": "date-time" },
+    "tool": { "type": "string", "enum": ["ansible_tower", "xl_release", "generic"] },
+    "job_id": { "type": "string" },
+    "step": { "type": "string" },
+    "level": { "type": "string", "enum": ["DEBUG", "INFO", "WARN", "ERROR"] },
+    "message": { "type": "string" },
+    "raw": { "type": "string" },
+    "detected_class": { "type": "string", "nullable": true },
+    "detected_reason": { "type": "string", "nullable": true },
+    "suggested_fix": { "type": "string", "nullable": true },
+    "meta": { "type": "object", "additionalProperties": true }
+  }
+}

@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node/Angular
+node_modules/
+dist/
+
+# Data & models
+data/raw/
+models/
+notebooks/.ipynb_checkpoints
+
+# System/Editor
+.vscode/
+.DS_Store
+Thumbs.db
